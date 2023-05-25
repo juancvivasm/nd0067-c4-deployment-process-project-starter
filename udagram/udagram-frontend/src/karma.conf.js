@@ -34,5 +34,6 @@ module.exports = function (config) {
     },
     singleRun: false,
     failOnEmptyTestSuite: false,
+    browserNoActivityTimeout: 50000,
   });
 };
