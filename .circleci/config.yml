@@ -10,13 +10,12 @@ jobs:
   build:
     docker:
       # the base image can run most needed actions with orbs
-      - image: "cimg/node:14.21.3"
+      - image: "cimg/node:14.15"
     steps:
-      - browser-tools/install-browser-tools:
-          chrome-version: 97.0.4692.71
+      - browser-tools/install-chrome
       # install node and checkout code
       - node/install:
-          node-version: '14.21.3'         
+          node-version: '14.15'         
       - checkout
       # Use root level package.json to install dependencies in the frontend app
       - run:

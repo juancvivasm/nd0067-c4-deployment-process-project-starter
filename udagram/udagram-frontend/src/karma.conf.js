@@ -30,16 +30,10 @@ module.exports = function (config) {
       MyChromeHeadless: {
         base: 'ChromeHeadless',
         flags: [
-          '--headless',
-          '--no-sandbox',
-          '--disable-gpu'],
+          '--no-sandbox'
+        ],
       },
     },
     singleRun: false,
-    failOnEmptyTestSuite: false,
-    captureTimeout: 60000,
-    browserDisconnectTolerance: 5,
-    browserDisconnectTimeout: 30000,
-    browserNoActivityTimeout: 30000,
   });
 };
