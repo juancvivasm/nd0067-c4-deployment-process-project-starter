@@ -29,11 +29,17 @@ module.exports = function (config) {
     customLaunchers: {
       MyChromeHeadless: {
         base: 'ChromeHeadless',
-        flags: ['--no-sandbox'],
+        flags: [
+          '--headless',
+          '--no-sandbox',
+          '--disable-gpu'],
       },
     },
     singleRun: false,
     failOnEmptyTestSuite: false,
-    browserNoActivityTimeout: 50000,
+    captureTimeout: 60000,
+    browserDisconnectTolerance: 5,
+    browserDisconnectTimeout: 30000,
+    browserNoActivityTimeout: 30000,
   });
 };
