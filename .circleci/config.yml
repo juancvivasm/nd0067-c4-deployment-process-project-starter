@@ -44,12 +44,6 @@ jobs:
           command: |
             echo "TODO: Test the frontend"
             npm run frontend:test
-      # e2e the frontend
-      - run:
-          name: Front-End Test
-          command: |
-            echo "TODO: e2e the frontend"
-            npm run frontend:e2e
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
@@ -79,6 +73,12 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run frontend:deploy
+      # e2e the frontend
+      - run:
+          name: E2E tests
+          command: |
+            echo "TODO: E2E tests"
+            npm run frontend:e2e
             
 workflows:
   udagram:
