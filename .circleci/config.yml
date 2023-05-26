@@ -68,11 +68,17 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
+          name: Deploy API
+          # TODO: Install, build, deploy in both apps
+          command: |
+            echo "# TODO: Install, build, deploy in both apps"
+            npm run api:deploy
+      - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
             echo "# TODO: Install, build, deploy in both apps"
-            npm run deploy
+            npm run frontend:deploy
       # E2E tests
       - run:
           name: E2E tests
