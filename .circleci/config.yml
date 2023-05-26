@@ -12,7 +12,8 @@ jobs:
       # the base image can run most needed actions with orbs
       - image: "cimg/node:14.21.3"
     steps:
-      - browser-tools/install-chrome
+      - browser-tools/install-browser-tools:
+          chrome-version: 97.0.4692.71
       # install node and checkout code
       - node/install:
           node-version: '14.21.3'         
