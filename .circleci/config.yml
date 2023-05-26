@@ -72,8 +72,8 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             echo "# TODO: Install, build, deploy in both apps"
-            npm run frontend:deploy
-      # e2e the frontend
+            npm run deploy
+      # E2E tests
       - run:
           name: E2E tests
           command: |
