@@ -73,6 +73,12 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run deploy
+      - run:
+          name: E2E tests
+          # E2E tests
+          command: |
+            echo "TODO: E2E tests"
+            npm run frontend:e2e
             
 workflows:
   udagram:
