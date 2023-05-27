@@ -44,12 +44,17 @@ jobs:
           command: |
             echo "TODO: Test the frontend"
             npm run frontend:test
+      # Start API
+      - run:
+          name: "Start API"
+          background: true
+          command: | 
+            npm run api:start
       # E2E tests
       - run:
           name: E2E tests
           command: |
-            echo "TODO: E2E tests"
-            npm run api:start
+            echo "E2E tests"
             npm run frontend:e2e
       # TODO: Build the frontend app
       - run:
