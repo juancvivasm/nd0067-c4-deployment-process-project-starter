@@ -2,8 +2,7 @@
 
 CircleCI is a continuous integration and continuous deployment platform. A CI/CD pipeline is created with GitHub. This allows incremental updates to end users faster and minimizing possible errors.
 
-<image src="images/pipeline
-_description.jpg" alt="Udagram infrastructure">
+<image src="images/pipeline_description.jpg" alt="Udagram infrastructure">
 
 ## Development Pipeline
 
