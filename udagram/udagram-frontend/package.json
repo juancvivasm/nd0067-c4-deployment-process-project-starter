@@ -10,7 +10,7 @@
     "deploy": "npm install -f && npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
     "test": "ng test --watch=false",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ENV=test ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
     "codelyzer": "~4.5.0",
+    "dotenv": "^16.0.3",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.4",
