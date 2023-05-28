@@ -1,13 +1,12 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-import * as dotenv from 'dotenv';
 
-dotenv.config();
+
 export const environment = {
   production: true,
   appName: 'Udagram By @JC PRD',
-  apiHost: process.env.ENV === 'test' ? 'http://localhost:8080/api/v0' : 'http://udagram-api-dev.us-east-1.elasticbeanstalk.com/api/v0'
+  apiHost: 'http://udagram-api-dev.us-east-1.elasticbeanstalk.com/api/v0'
 };
 
 /*

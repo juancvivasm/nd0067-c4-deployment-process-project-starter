@@ -50,12 +50,6 @@ jobs:
           background: true
           command: | 
             npm run api:start
-      # E2E tests
-      - run:
-          name: E2E tests
-          command: |
-            echo "E2E tests"
-            npm run frontend:e2e
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
@@ -85,6 +79,12 @@ jobs:
           command: |
             echo "# TODO: Install, build, deploy in both apps"
             npm run deploy
+      # E2E tests
+      - run:
+          name: E2E tests
+          command: |
+            echo "E2E tests"
+            npm run frontend:e2e
             
 workflows:
   udagram:
