@@ -1,5 +1,6 @@
 # Hosting a Full-Stack Application
 
+<image src="documentation/screenshots/FrontEnd.png" alt="Udagram">
 
 ## Udagram
 
