@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "eb setenv POSTGRES_HOST=$POSTGRES_HOST"
+echo "eb setenv POSTGRES_DB=$POSTGRES_DB"
+echo "eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME"
+echo "eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD"
+echo "eb setenv AWS_BUCKET=$AWS_BUCKET"
+echo "eb setenv AWS_REGION=$AWS_REGION"
+echo "eb setenv AWS_PROFILE=$AWS_PROFILE"
+echo "eb setenv JWT_SECRET=$JWT_SECRET"
+echo "eb setenv URL=$URL"
